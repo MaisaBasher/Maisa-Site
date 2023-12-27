@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
+    <!-- -----------------Intro------------------------------ -->
     <div id = "header">
         <div class="container">
             <h1 id="name">Maisa Basher.</h1>
@@ -18,16 +19,82 @@
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-            
+            </nav>  
         </div>
+
         <div id = "intro">
             <div class="header-text">
                 <p> Aspiring Software Engineer</p>
                 <h1>Hi, I am <span> Maisa </span></h1>
             </div>
-            <img src="images/me.jpeg" alt="Avatar">
+            <img id = "introImage" src="images/me.jpeg" alt="Avatar">
         </div> 
     </div>
+
+<!-- -----------------about------------------------------ -->
+    <div id = "about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img  src="images/gradpic.jpg" alt="Avatar">
+                </div>
+                <div class="col2">
+                    <h1>About me</h1>
+                    <p class = "description">
+                        I am a recent graduate from Gerogia Intitute of Technology. 
+                        I have done my Bachelors in Computer Science. My threads were People and Media </br> I am originially from Bangladesh.
+                        I moved to US in 2019.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick = "opentab('Experience')"</p> Experience</p>
+                        <p class = "tab-links" onclick = "opentab('Skills')"</p> Skills</p>
+                        <p class = "tab-links" onclick = "opentab('Education')"</p> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "Experience">
+                        <ul>
+                            <li><span>Software Engineer Intern - Summer 2023</span></br> Microsoft, Azure, Datapath Operation,</li>
+                            <li><span>Software Engineer Intern - summer 2022</span></br> MasterCard, Test and Learn,</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Skills">
+                        <ul>
+                            <li><span>Languages/Framework</span></br>Java, Python, C#, HTML, CSS, JavaScript, MySQL, React.</li>
+                            <li><span>Tools</span></br>Git, Figma, VS code</li>
+                            <li><span>Principles</span></br>Agile, Waterfall</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="Education">
+                        <ul>
+                            <li><span>Gerogia Institute of Technology</span></br> 2021 - 2023</li>
+                            <li><span>Gerogia State Perimeter College</span></br> 2019 - 2020 [Transferred]</li>
+                            <li><span>Bangladesh University of Enginnering & Technology</span></br> 2018 - 2018</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+
+
+    </script>
 </body>
 </html>
