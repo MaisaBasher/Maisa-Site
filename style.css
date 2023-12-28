@@ -20,23 +20,32 @@ body{
   }
 #header{
     width: 100%;
-    height: 100vh;  
+    height: 100vh; 
+    
 }
 .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    
+   
 }
 #name {
     padding: 20px 50px;
     color: plum;
     font-size: 50px;
 }
+nav {
+    position: fixed;
+    right: 0px;
+    background: black;
+}
 nav ul li{
     display: inline-block;
     justify-content: space-between;
     margin: 20px 20px;
+    
 }
 nav ul li a {
     color: white;
