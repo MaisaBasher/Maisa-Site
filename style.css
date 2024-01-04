@@ -14,22 +14,21 @@ body{
 #introImage {
     border-radius: 50%;
     width:300px;
-    float: right;
+    /* float: right;
     margin-right: 150px ;
-    margin-top: 150px;
+    margin-top: 150px; */
   }
 #header{
     width: 100%;
-    
 }
 
 #x{
     background: black;
     width: 100%;
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     justify-content: space-between;
-    
     
 }    
 
@@ -72,7 +71,7 @@ nav ul li a:hover::after{
 
 .header-text {
     font-weight: normal;
-    margin: 15% 20%;
+    
     font-size: 20px;
 }
 .header-text h1{
@@ -86,8 +85,9 @@ nav ul li a:hover::after{
 
 #intro{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+    align-items: center;
 }
 
 /* -----------about-------------- */
