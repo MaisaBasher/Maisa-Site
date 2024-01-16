@@ -19,6 +19,7 @@ body{
     margin-top: 150px; */
   }
 #header{
+    padding-top: 150px;
     width: 100%;
 }
 
@@ -92,7 +93,7 @@ nav ul li a:hover::after{
 /* -----------about-------------- */
 #about{
     /* padding: 50px 0px; */
-    padding: 50px 100px;
+    padding: 150px 100px 0px 100px;
     color: #ababab;
 }
 .row {
@@ -171,11 +172,17 @@ nav ul li a:hover::after{
 /* -------Projects-------- */
 
 #projects{
-    padding: 50px 100px;
+    padding: 150px 100px 0px 100px;
+}
+.project-img{
+    width: auto;
+    height: 200px;
+    
+    
 }
 .project-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 40px;
     margin-top:50px;
     overflow: scroll; 
@@ -190,14 +197,16 @@ nav ul li a:hover::after{
     
 }
 .project-list div h2{
-    font-weight: normal;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
     color: plum;
 
 }
-.project-list div p{
+.project-list div ul{
     font-weight: normal;
-    font-size: 10px;
+    font-size: 15px;
+    margin: 10px 10px;
     
 
 }
@@ -205,7 +214,8 @@ nav ul li a:hover::after{
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
-    color:#ababab;
+    color:white;
+    margin-left: 10px;
 
 }
 
