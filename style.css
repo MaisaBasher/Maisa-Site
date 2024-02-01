@@ -250,7 +250,7 @@ nav ul li a:hover::after{
 }
 .work-img{
     width: 200px;
-    height: auto;
+    height: 250px;
 }
 .time{
     font-weight: bold;
@@ -261,19 +261,19 @@ nav ul li a:hover::after{
     color: grey;
     margin-top:30px;
 }
+
+.work p{
+    padding: 5px 5px;
+}
 .tech{
     display: inline;
     font-weight: lighter;
     font-size: 12px;
-    padding: 5px 5px;
     border-radius: 5px;
     background: gainsboro;
     color: black;
-    margin: 5px 5px;
+    margin: 10px 5px;
 
-}
-.work p{
-    padding: 5px 5px;
 }
 .work ul{
     padding: 5px 8px;
@@ -282,6 +282,7 @@ nav ul li a:hover::after{
     font-style: italic;
 }
 .details{
+    width: 100%;
     padding: 10px 10px;
     background: whitesmoke;
     color: black;
