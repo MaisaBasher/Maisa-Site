@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 html{
@@ -76,11 +76,11 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 40px;
 }
 .header-text h1 span{
     color: plum;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 #intro{
@@ -96,6 +96,7 @@ nav ul li a:hover::after{
     padding: 150px 100px 0px 100px;
     color: #ababab;
 }
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -121,7 +122,8 @@ nav ul li a:hover::after{
 }
 .col2 p{
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
+    
 }
 
 .tab-titles{
@@ -135,6 +137,7 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: white;
 }
 
 .tab-links::after{
@@ -155,11 +158,16 @@ nav ul li a:hover::after{
     list-style: none;
     margin: 10px 0px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 20px;
+}
+.tab-contents a{
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
 }
 .tab-contents ul li span{
     color: plum;
-    font-size: 16px;   
+    font-size: 20px;   
 }
 
 .tab-contents{
@@ -199,12 +207,25 @@ nav ul li a:hover::after{
 .project-list div h2{
     font-weight: bold;
     font-size: 20px;
-    padding: 20px 0px;
+    padding: 5px 0px;
     color: plum;
 
 }
+
+.project-list div p{
+    display: inline;
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: gainsboro;
+    color: black;
+    margin: 5px 5px;
+
+}
+
 .project-list div ul{
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 15px;
     margin: 10px 10px;
     
@@ -223,6 +244,48 @@ nav ul li a:hover::after{
     background: rgb(83, 67, 83);
     transform: translateY(-10px);
 }
+/* -------workHistory----------- */
+#workall{
+    padding: 150px 100px 0px 100px;
+}
+.work-img{
+    width: 200px;
+    height: auto;
+}
+.time{
+    font-weight: bold;
+    float: right;
+}
+.work{
+    display: flex;
+    color: grey;
+    margin-top:30px;
+}
+.tech{
+    display: inline;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: gainsboro;
+    color: black;
+    margin: 5px 5px;
+
+}
+.work p{
+    padding: 5px 5px;
+}
+.work ul{
+    padding: 5px 8px;
+}
+.ita{
+    font-style: italic;
+}
+.details{
+    padding: 10px 10px;
+    background: whitesmoke;
+    color: black;
+}
 
 /* ----contact--------- */
 #contact{
@@ -235,9 +298,17 @@ nav ul li a:hover::after{
     margin: 10px 10px;
 }
 .contact-left a{
+    display: block;
     font-weight: normal;
+    font-style: italic;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 30px;
     color: aliceblue;
-    margin: 0px 10px;
+    margin: 10px 10px;
+}
+
+/* ---- */
+.endline {
+    text-align: center;
+    color: plum;
 }
